@@ -11,7 +11,7 @@ import Alamofire
 
 extension APIServices {
     
-    func getUsers(since: Int = 1, completion: @escaping (_ users: [User]) -> Void) {
+    func getUsers(since: Int = 0, completion: @escaping (_ users: [User]) -> Void) {
         let endPoint = "users?since=\(since)"
         
         

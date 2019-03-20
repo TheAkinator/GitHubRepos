@@ -14,7 +14,7 @@
 		C410252722401007008A26AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C410252522401007008A26AB /* Main.storyboard */; };
 		C41025292240100A008A26AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41025282240100A008A26AB /* Assets.xcassets */; };
 		C410252C2240100A008A26AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C410252A2240100A008A26AB /* LaunchScreen.storyboard */; };
-		C41025372240100A008A26AB /* Github_ReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41025362240100A008A26AB /* Github_ReposTests.swift */; };
+		C41025372240100A008A26AB /* APIServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41025362240100A008A26AB /* APIServicesTests.swift */; };
 		C41025422240100A008A26AB /* Github_ReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41025412240100A008A26AB /* Github_ReposUITests.swift */; };
 		C410255C224010BD008A26AB /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4102550224010BD008A26AB /* WorkSans-Regular.ttf */; };
 		C410255D224010BD008A26AB /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4102551224010BD008A26AB /* WorkSans-Medium.ttf */; };
@@ -42,6 +42,7 @@
 		C410258D2240922A008A26AB /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410258C2240922A008A26AB /* Repo.swift */; };
 		C410258F22409240008A26AB /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410258E22409240008A26AB /* RepoViewModel.swift */; };
 		C4BE57FD22416C2A00E933FF /* ReposServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BE57FC22416C2A00E933FF /* ReposServices.swift */; };
+		C4BE57FF2241E0B300E933FF /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BE57FE2241E0B300E933FF /* UserViewModelTests.swift */; };
 		E4267FEA4BEFBE4DC9BF7D75 /* Pods_Github_Repos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00E521B559779A7A8D13BB /* Pods_Github_Repos.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +80,7 @@
 		C410252B2240100A008A26AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C410252D2240100A008A26AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C41025322240100A008A26AB /* Github ReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github ReposTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C41025362240100A008A26AB /* Github_ReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_ReposTests.swift; sourceTree = "<group>"; };
+		C41025362240100A008A26AB /* APIServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServicesTests.swift; sourceTree = "<group>"; };
 		C41025382240100A008A26AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C410253D2240100A008A26AB /* Github ReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github ReposUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41025412240100A008A26AB /* Github_ReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_ReposUITests.swift; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 		C410258C2240922A008A26AB /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		C410258E22409240008A26AB /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
 		C4BE57FC22416C2A00E933FF /* ReposServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposServices.swift; sourceTree = "<group>"; };
+		C4BE57FE2241E0B300E933FF /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
 		F52DB4DFFD72B11709BBF697 /* Pods-Github ReposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github ReposTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Github ReposTests/Pods-Github ReposTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,7 +210,8 @@
 		C41025352240100A008A26AB /* Github ReposTests */ = {
 			isa = PBXGroup;
 			children = (
-				C41025362240100A008A26AB /* Github_ReposTests.swift */,
+				C41025362240100A008A26AB /* APIServicesTests.swift */,
+				C4BE57FE2241E0B300E933FF /* UserViewModelTests.swift */,
 				C41025382240100A008A26AB /* Info.plist */,
 			);
 			path = "Github ReposTests";
@@ -676,7 +679,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41025372240100A008A26AB /* Github_ReposTests.swift in Sources */,
+				C4BE57FF2241E0B300E933FF /* UserViewModelTests.swift in Sources */,
+				C41025372240100A008A26AB /* APIServicesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
